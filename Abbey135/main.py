@@ -43,6 +43,6 @@ def main():
         dec = int(byte, 2)
         hexList.append('{:02x}'.format(dec).upper())
 
-    printAns(hexList)
+    printAns(hexList) 
 
 main()
