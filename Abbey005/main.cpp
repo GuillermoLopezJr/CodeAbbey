@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-//fuction prototype
+//function prototype
 int getMin(int arr[], const int SIZE);
 void printArr(int arr[], const int SIZE);
 
