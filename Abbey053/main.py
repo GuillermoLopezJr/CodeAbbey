@@ -66,7 +66,7 @@ def main():
         a = canEat(rowK, colK, rowQ, colQ) 
         ans.append(a)
         
-    print("\nanswer")
+    print("\nanswer:")
     print(' '.join(ans))
 
 main()
