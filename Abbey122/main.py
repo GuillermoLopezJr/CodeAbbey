@@ -18,7 +18,7 @@ def partition(xs, left, right):
             else:
                 xs[rt] = xs[lt]
                 rt -= 1
-                dir = "left"
+                direction = "left"
 
     #lt = rt ==> both points to empty cell were pivot should return
     xs[lt] = pivot
@@ -27,7 +27,7 @@ def partition(xs, left, right):
 
 #return list of left-right ranges for each call of recursive function 
 
-def quickSort(xs, left, right,ans):
+def quickSort(xs, left, right, ans):
     a = str(left) +"-" + str(right)
     ans.append(a)
 
