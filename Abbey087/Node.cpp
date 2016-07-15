@@ -1,12 +1,12 @@
 #include "Node.h"
 
-Node::Node(int e = 0, Node* rt = NULL, Node* lt = NULL) {
+Node::Node(int e, Node* rt, Node* lt) {
     elem  = e;
     right = rt;
     left  = lt;
 }
 
-Node::Node(Node* node) {
+Node::Node(Node& node) {
     elem  = node.getElem();
     right = node.getRight();
     left  = node.getLeft();

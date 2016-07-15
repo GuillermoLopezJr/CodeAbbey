@@ -1,4 +1,5 @@
 using namespace std;
+#include <cstdlib>
 
 class Node {
 private:
@@ -13,4 +14,4 @@ public:
     int getElem();
     Node* getRight();
     Node* getLeft();
-}
+};
