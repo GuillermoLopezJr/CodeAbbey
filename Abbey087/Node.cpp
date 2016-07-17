@@ -23,3 +23,23 @@ Node* Node::getRight() {
 Node* Node::getLeft() {
     return left;
 }
+
+ostream& operator<<(ostream& os, const Node& node) {
+    os << "(";
+    if (node.left == nullptr) {
+        os << "-";
+    }
+    else {
+        os << node.left->elem;
+    }
+    os << "," << node.elem << ",";
+    if (node.right == nullptr) {
+        os << "-";
+    }
+    else {
+        os << node.right->elem;
+    }
+    os << ")";
+
+    return os;
+}

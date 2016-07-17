@@ -39,3 +39,32 @@ Node* BinaryTree::insert(Node* n, int elem) {
 void BinaryTree::insert(int elem) {
    root =  insert(root, elem);
 }
+
+void BinaryTree::preOrderTraversal(Node* node) {
+    if (node != nullptr) {
+        cout << *node << ", ";
+        preOrderTraversal(node->left);
+        preOrderTraversal(node->right);
+    }
+}
+
+void BinaryTree::inOrderTraversal(Node* node) {
+    if (node != nullptr) {
+        inOrderTraversal(node->left);
+        cout << *node << ", ";
+        inOrderTraversal(node->right);
+    }
+}
+
+void BinaryTree::postOrderTraversal(Node* node) {
+    if (node != nullptr) {
+        postOrderTraversal(node->left);
+        postOrderTraversal(node->right);
+        cout << *node << ", ";
+    }
+}
+
+ostream& operator<<(ostream& os, const BinaryTree& tree) {
+    os << "";
+    return os;
+}

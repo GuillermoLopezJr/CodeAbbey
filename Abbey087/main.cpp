@@ -13,13 +13,12 @@ int main() {
         cin >> data[i];
     }
 
-    //BinaryTree tree(3);
+    BinaryTree tree(data[0]);
 
-    Node* n = new Node(3);
     for (int i = 1; i < testCases; i++) {
-      //  tree.insert(data[i]);
+       tree.insert(data[i]);
     }
-
+    tree.inOrderTraversal(tree.getRoot());
    return 0;
 }
 
